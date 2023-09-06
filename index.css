@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+}
+
+main {
+
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+main .container {
+  padding-top: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  width: 23rem;
+  height: 75vh;
+  border-radius: 15px;
+  box-shadow: 1px 4px 146px 36px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 146px 36px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 146px 36px rgba(0, 0, 0, 0.75);
+}
+
+.container .equilibrium-photo img {
+  width: 340px;
+  padding: 1rem;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.container .photo-view {
+  position: absolute;
+  justify-content: center;
+  top: 8rem;
+  left: 33rem;
+  width: 310px;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-left: 2rem;
+  height: 38vh;
+  opacity: 5;
+}
+
+.container .photo-view:hover {
+  background: rgba(16, 242, 220, 0.670);
+  display: block;
+  cursor: pointer;
+}
+
+.container .photo-view img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 5.7rem;
+  left: 5.6rem;
+  display: none;
+}
+
+.container .photo-view:hover img {
+  display: block;
+}
+
+
+.container h2 {
+  margin-top: -5px;
+  margin-left: 25px;
+  color: hsl(0, 0%, 100%);
+}
+
+.container h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container p {
+  margin-left: 25px;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.container .eth-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.container .eth-container img {
+  object-fit: contain;
+}
+
+.container .ETH {
+  display: flex;
+  color: hsl(178, 100%, 50%);
+  gap: 5px;
+}
+
+.container .clock {
+  display: flex;
+  gap: 5px;
+  color: hsl(215, 51%, 70%);
+}
+
+footer {
+  display: flex;
+}
+
+footer img {
+  margin: 25px;
+  margin-top: auto;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.container footer p {
+  font-size: 15px;
+  margin-left: -10px;
+  color: hsl(215, 51%, 70%);
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+hr {
+  width: 85%;
+  border: none;
+  border-top: 1px solid;
+  color: hsl(215, 32%, 27%);
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+overflow: hidden;
+  }
+
+  main .container {
+    max-width: fit-content;
+    height: 82vh;
+    padding-top: 0;
+  }
+
+  footer {
+    padding-top: 9px;
+  }
+
+  .container .equilibrium-photo img {
+    margin-left: auto;
+  }
+
+  .container .equilibrium-photo img {
+    width: 340px;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-left: auto;
+  }
+
+  .container .photo-view {
+    position: absolute;
+    justify-content: center;
+    top: 4rem;
+    left: 2.5px;
+    width: 308px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    height: 43vh;
+    opacity: 5;
+  }
+
+  .container .photo-view img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 5.7rem;
+    left: -6rem;
+    display: none;
+  }
+}
